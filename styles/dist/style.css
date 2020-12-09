@@ -29,7 +29,7 @@ body {
 
 .headerSpacer h4 {
   font-family: "Unica One", cursive;
-  font-size: 2em;
+  font-size: 1.3em;
   margin: 20px;
   background: #dcf9f7;
   color: #111;
@@ -45,7 +45,7 @@ body {
   justify-content: space-between;
 }
 
-.slide {
+.titleSlide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +56,7 @@ body {
   z-index: 3;
 }
 
-.slide h1 {
+.titleSlide h1 {
   font-family: "Unica One", cursive;
   font-size: 18em;
   margin: 0;
@@ -78,7 +78,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  scroll-snap-align: start;
 }
 
 .container .section:nth-child(3) {
@@ -101,7 +100,8 @@ body {
 
 .container .section .content {
   position: absolute;
-  bottom: 50px;
+  left: 30px;
+  bottom: 200px;
   max-width: 700px;
 }
 
@@ -120,4 +120,26 @@ body {
   font-weight: 300;
   padding: 10px 20px;
   margin-top: 10px;
+}
+
+.container .section .content .one {
+  left: 500px;
+}
+
+/* Footer */
+.footer {
+  background: #dcf9f7;
+  height: 30px;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  list-style: none;
+  color: #111;
+  font-family: "Unica One", cursive;
+  text-decoration: none;
+  padding-top: 5px;
 }
