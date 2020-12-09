@@ -1,10 +1,66 @@
-/*font-family: 'Bebas Neue', cursive;
-font-family: 'Quicksand', sans-serif;*/
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gruppo&family=Michroma&family=Quicksand:wght@300&family=Unica+One&display=swap");
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Gruppo', cursive;
+font-family: 'Michroma', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Unica One', cursive;
+*/
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.headerSpacer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: #dcf9f7;
+  height: 71px;
+  z-index: 3;
+}
+.headerSpacer h4 {
+  font-family: "Unica One", cursive;
+  font-size: 2em;
+  margin: 20px;
+  background: #dcf9f7;
+  color: #111;
+  font-weight: 200;
+  display: inline-block;
+}
+.headerTitle {
+  width: 80%;
+}
+.navTitle {
+  justify-content: space-between;
+}
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 24vh;
+  overflow: hidden;
+
+  z-index: 2;
+}
+.slide h1 {
+  font-family: "Unica One", cursive;
+  font-size: 18em;
+  margin: 0;
+  color: #111;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 10px;
 }
 .container {
   position: relative;
@@ -19,17 +75,17 @@ font-family: 'Quicksand', sans-serif;*/
   height: 100%;
   scroll-snap-align: start;
 }
+.container .section:nth-child(3) {
+  background: url(/img/Beauty_Clinic_036.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
 .container .section:nth-child(2) {
   background: url(/img/Beauty_Clinic_027.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
-.container .section:nth-child(1) {
-  background: url(/img/Beauty_Clinic_036.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-.container .section:nth-child(3) {
+.container .section:nth-child(4) {
   background: url(/img/Beauty_Clinic_045.jpg);
   background-size: cover;
   background-attachment: fixed;
